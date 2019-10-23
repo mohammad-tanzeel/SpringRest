@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-rest-hibernate-example",
+		"_postman_id": "033eaa7c-868b-fa76-23c6-8c8280d541d1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all countries",
+			"request": {
+				"url": "http://localhost:8088/SpringRestHibernate/getCountries",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cname\": \"China\",\n\t\"cpopulation\": \"1409\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get country by id",
+			"request": {
+				"url": "http://localhost:8088/SpringRestHibernate/getCountry/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cname\": \"China\",\n\t\"cpopulation\": \"1409\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

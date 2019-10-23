@@ -1,0 +1,21 @@
+// Create database
+CREATE DATABASE springresthibernate;
+
+// Create table
+CREATE TABLE Country_Tbl(
+    Country_id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Country_name VARCHAR(100) NOT NULL,
+    Country_population BIGINT(51) NOT NULL
+);
+
+// Insert records
+INSERT INTO `springresthibernate`.`country_tbl` 
+            (`country_id`, `country_name`, `country_population`) 
+VALUES      (NULL, 'China', '1409'), 
+            (NULL, 'India', '1339'), 
+            (NULL, 'United States of America', '324'), 
+            (NULL, 'Indonesia', '263'), 
+            (NULL, 'Brazil', '208'); 
+
+// View records
+SELECT * FROM country_tbl;
